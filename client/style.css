@@ -1,0 +1,19 @@
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+.rows {
+    display: flex;
+
+}
+
+.rows .row {
+    outline: 1px solid black;
+    width: 50%;
+    padding: 20px;
+}
+
+#submit_name, #create_game, #join_to_game {
+    display: none;
+}

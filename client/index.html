@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<label for="name">Input your name</label>
+<input type="text" name="name" id="name">
+<a href="#" id="submit_name">OK</a>
+
+<br>
+
+<a href="#" id="create_game">Create Game!</a>
+<br>
+<a href="#" id="join_to_game">Join to game</a>
+
+<div class="rows">
+    <div class="row">
+        <h4>Now games:</h4>
+        <ul>
+            <li>asdf</li>
+            <li>asdf</li>
+            <li>asdf</li>
+        </ul>
+    </div>
+    <div class="row">
+        <h4>Now players:</h4>
+        <ul id="players">
+        </ul>
+    </div>
+</div>
+
+
+
+
+
+<script src="jquery-3.3.1.min.js"></script>
+<script src="socket.io.js"></script>
+<script src="game.js"></script>
+</body>
+</html>
