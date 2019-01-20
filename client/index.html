@@ -4,13 +4,30 @@
     <meta charset="UTF-8">
     <title>Title</title>
 
+    <link href="https://fonts.googleapis.com/css?family=Play&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<label for="name">Input your name</label>
-<input type="text" name="name" id="name">
-<a href="#" id="submit_name">OK</a>
+<div class="screen" id="welcome">
+    <label for="name">Введите Ваше имя:</label>
+    <input type="text" name="name" id="name">
+    <a href="#" class="btn" id="submit_name">В игру!</a>
+</div>
+
+<div class="screen" id="choose_game">
+    <div class="created_games">
+        <p class="title">Созданные игры:</p>
+        <div id="created_games__list">
+
+        </div>
+    </div>
+    <label for="room">Создать игру:</label>
+    <input type="text" name="room" id="room" placeholder="Название игры">
+    <a href="#" class="btn" id="submit_room">Создать!</a>
+</div>
+
+
 
 <br>
 
@@ -37,8 +54,8 @@
 
 
 
-
 <script src="jquery-3.3.1.min.js"></script>
+<script src="animation.js"></script>
 <script src="socket.io.js"></script>
 <script src="game.js"></script>
 </body>
